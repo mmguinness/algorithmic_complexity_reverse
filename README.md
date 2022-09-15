@@ -31,3 +31,7 @@ Once you have written a few, compare the shapes of different curves.
 - [ ] Which algorithms are more efficient?
 
 ![](./images/Reverse_algorithm.png)
+
+![](./images/Reverse_algorithm_v2.png)
+
+![](./images/Code.png)

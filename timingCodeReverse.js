@@ -8,7 +8,7 @@ const timeToExecuteReverse = () => {
   const runReverse = () => {
     const arr = [];
     // CHANGE SIZE OF ARRAY HERE
-    for (let n = 0; n < 5500000; n++) {
+    for (let n = 0; n < 100000; n++) {
       arr.push(n);
     }
     arr.sort((a, b) => 0.5 - Math.random());
@@ -40,8 +40,8 @@ const timeToExecuteReverse = () => {
 
 timeToExecuteReverse();
 
-// My Alogrithm for reverse
-// Array Size     Time(miliseconds)
+// My Alogrithm for reverse VERSION ONE - QUADRATIC
+// Array Size     Time(milliseconds)
 // 5000           3.2
 // 10000          17.4
 // 15000          41.25
@@ -63,8 +63,31 @@ timeToExecuteReverse();
 // 95000          2037.1
 // 100000         2237.2
 
+// My Alogrithm for reverse VERSION TWO - LINEAR?
+// Array Size     Time(milliseconds)
+// 5000           0.15
+// 10000          0.15
+// 15000          0.05
+// 20000          0.2
+// 25000          0.1
+// 30000          0.15
+// 35000          0.55
+// 40000          0.3
+// 45000          0.4
+// 50000          0.6
+// 55000          0.4
+// 60000          0.4
+// 65000          0.4
+// 70000          0.55
+// 75000          0.6
+// 80000          0.5
+// 85000          0.75
+// 90000          0.6
+// 95000          0.5
+// 100000         0.7
+
 // Built-in reverse function
-// Array Size     Time(miliseconds)
+// Array Size     Time(milliseconds)
 // 5000000         0.55
 // 1000000          1.2
 // 1500000          1.9
@@ -76,12 +99,3 @@ timeToExecuteReverse();
 // 4500000          5.5
 // 5000000          5.7
 // 5500000          6.2
-// 6000000
-// 6500000
-// 7000000
-// 7500000
-// 8000000
-// 8500000
-// 9000000
-// 9500000
-// 10000000
